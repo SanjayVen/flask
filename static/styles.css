@@ -1,0 +1,23 @@
+form {
+    text-align: center;
+}
+
+body {
+    background-color: green;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#error {
+    color: blue
+}
+
+#submit {
+    font-size: 12pt;
+    width: 75%;
+    text-align: center;
+    padding: 15px;
+    margin: 15%;
+    font-style: italic;
+    display: block;
+}

@@ -4,9 +4,14 @@ app = Flask(__name__)
 username = 'Guest'
 
 
-@app.route('/')
+@app.route("/")
 def index():
-    return render_template('index.html', username=username)
+    return render_template("index.html", username=username)
+
+
+@app.route('/stock')
+def stock():
+    return render_template('add_stock.html')
 
 @app.route('/calculator', methods=["GET", "POST"])
 def calculator():

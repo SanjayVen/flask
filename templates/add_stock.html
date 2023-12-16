@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="static/styles.css" />
+    </head>
     <body>
-        <h3>Add a stock</h3>
+        {% for stock in stocks %}
+            <h1>{{ stock['name'] }}</h1>
+            <p>{{ stock['symbol'] }}</h1>
+            <p>{{ stock['price'] }}</h1>
+        {% endfor %}
         <form method="post">
-            <input name="name" type="text" placeholder="name" />
-            <input name="price" type="number" placeholder="0.01" />
-            <input name="symbol" type="text" placeholder="symbol" />
-            <input type="submit" />
+            <h3>Add a stock</h3>
+            
+            <input class="inputs" name="name" type="text" placeholder="name" />
+            <input class="inputs" name="price" type="number" placeholder="0.01" />
+            <input class="inputs" name="symbol" type="text" placeholder="symbol" />
+
+            <input id="submit-btn" type="submit" value="Add" />
         </form>
     </body>
 </html>

@@ -6,8 +6,8 @@
     <body>
         {% for stock in stocks %}
             <h1>{{ stock['name'] }}</h1>
-            <p>{{ stock['symbol'] }}</h1>
-            <p>{{ stock['price'] }}</h1>
+            <p>{{ stock['symbol'] }}</p>
+            <p>{{ stock['price'] }}</p>
         {% endfor %}
         <form method="post">
             <h3>Add a stock</h3>
